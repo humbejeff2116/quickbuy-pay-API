@@ -93,6 +93,7 @@ function Bank() {
 
         function depositMoney(amount) {
             if (account) {
+                //TODO... call external API to recieve sum and deposit in account
                 account.deposit(amount.toFixed(2), function(err,message) {
                     if (err) {
                         console.error(err);                  
